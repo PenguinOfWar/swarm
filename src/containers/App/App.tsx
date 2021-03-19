@@ -1,4 +1,10 @@
 import { useEffect, useState } from 'react';
+import Boudica from '../../packages/boudica';
+
+/**
+ * summon boudica
+ */
+
 import './App.scss';
 
 function App() {
@@ -6,15 +12,25 @@ function App() {
 
   useEffect(() => {
     if (running) {
-      console.log('running', true);
       return;
     }
 
-    console.log('starting');
+    const boudica = new Boudica();
+
+    window.boudica = boudica;
     setRunning(true);
   }, [running]);
 
-  return <div className="App">Gday mate</div>;
+  return (
+    <div className="app container">
+      <div className="row">
+        <div className="col-12">
+          <h1>@swarm.ai/boudica</h1>
+          <h2>WIP!</h2>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
