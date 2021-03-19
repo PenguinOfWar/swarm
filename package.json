@@ -1,8 +1,8 @@
 {
-  "name": "hive-mind",
-  "version": "0.1.0",
+  "name": "swarm.ai",
+  "version": "0.2.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
@@ -10,9 +10,16 @@
     "@types/node": "^12.20.6",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
+    "bootstrap": "^5.0.0-beta2",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "lerna": "^4.0.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "sass-lint": "^1.13.1",
     "typescript": "^4.2.3",
     "web-vitals": "^1.1.1"
   },
