@@ -26,6 +26,7 @@ function App() {
       <div className="row">
         <div className="col-12">
           <h1>@swarm.ai/boudica</h1>
+          <h2>WIP</h2>
         </div>
       </div>
     </div>
