@@ -4,6 +4,8 @@
  * @author Darryl Walker
  */
 
+import timeout from '@bagofholding/async-timeout';
+
 export default class Boudica {
   birth = Date.now();
   interval = 1000;
@@ -20,16 +22,6 @@ export default class Boudica {
 
   constructor() {
     this.start();
-  }
-
-  /**
-   * Replaces the usual setTimeout function with an awaitable one
-   *
-   * @param milliseconds - number of milliseconds to wait
-   * @returns Promise
-   */
-  timeout(milliseconds: number) {
-    return new Promise(resolve => setTimeout(resolve, milliseconds));
   }
 
   start() {
@@ -66,6 +58,7 @@ export default class Boudica {
    * where the magic happens
    */
   public async heartbeat() {
+    await timeout(500);
     this.beat++;
   }
 }
