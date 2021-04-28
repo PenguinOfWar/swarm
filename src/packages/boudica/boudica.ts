@@ -30,6 +30,7 @@ export default class Boudica {
     /**
      * convert this to a self calling function
      * get variable timing on fly and better memory management
+     * separate cpu, gpu, and screen render
      */
 
     setInterval(async () => {
